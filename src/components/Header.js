@@ -131,7 +131,7 @@ export default function Header({ mobileMenu }) {
               <NavItem href="#">Brands</NavItem>
             </li>
             <li>
-              <Button>Create</Button>
+              <Button>Connect Wallet</Button>
             </li>
           </ul>
         </Nav>

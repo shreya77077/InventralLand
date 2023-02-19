@@ -109,7 +109,7 @@ function MyApp({ Component, pageProps }) {
                 <NavItem href="#">Brands</NavItem>
               </li>
               <li>
-                <Button>Create</Button>
+                <Button>Connect Wallet</Button>
               </li>
               <hr color={Colors.Primary} size="1" />
               <li>

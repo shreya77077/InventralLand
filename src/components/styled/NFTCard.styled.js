@@ -130,7 +130,7 @@ export default function NFTCard({ item }) {
             <EditionEl>
               {Edition} {Edition > 1 ? "Editions" : "Edition"} Minted
             </EditionEl>
-            <StockEl>{Stock} for sale</StockEl>
+            <StockEl>{Stock} </StockEl>
           </TSection>
           <ItemTitle>{Title}</ItemTitle>
           <PriceSection>{Price}</PriceSection>

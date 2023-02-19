@@ -6,6 +6,7 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useState, useEffect } from "react";
 import Button from "../styled/Button.styled";
 
+
 const HeroEl = styled.article`
   margin: 6rem 1rem 5rem 1rem;
   text-align: center;
@@ -131,28 +132,28 @@ const Items = [
     Id: 1,
     Badge: "UPCOMING",
     Date: "Tue, Feb 01",
-    Title: "UFC 271",
-    Author: "UFC",
+    // Title: "UFC 271",
+    // Author: "UFC",
 
-    ImageSrc: "/images/slider/2.png",
+    ImageSrc: "/images/nftimages/wallpaper2.jpeg",
   },
   {
     Id: 2,
     Badge: "SOLD OUT",
     Date: "Tue, Feb 01",
-    Title: "Slide 2",
-    Author: "UFC",
+    // Title: "Slide 2",
+    // Author: "UFC",
 
-    ImageSrc: "/images/slider/3.jpeg",
+    ImageSrc: "/images/nftimages/wallpaper1.jpeg",
   },
   {
     Id: 3,
     Badge: "LIVE NOW",
     Date: "Tue, Feb 01",
-    Title: "Slide 3",
-    Author: "UFC",
+    // Title: "Slide 3",
+    // Author: "UFC",
 
-    ImageSrc: "/images/slider/4.jpg",
+    ImageSrc: "/images/nftimages/wallpaper4.jpeg",
   },
 ];
 
@@ -164,8 +165,8 @@ export default function Hero() {
   return (
     <HeroEl>
       <Title>
-        <Heading>Buy, sell, and showcase NFTs</Heading>
-        <Sub>from leading creators and brands</Sub>
+        <Heading>Discover the best  web3 projects launch curated by the community buidlers</Heading>
+        <Sub>The one-and-only decentralized platform Web3 Project Founders can convert their brand-assets into NFTs by generating NFTs by the AI prompt,thus,enhancing the brand value in the ecosystem .</Sub>
       </Title>
       <Slider>
         <InfoContainer>
@@ -205,7 +206,7 @@ export default function Hero() {
               }}
             />
           </MiddleSection>
-          <Button>View Drop</Button>
+          {/* <Button>View Drop</Button> */}
         </InfoContainer>
         <Lines>
           {Slides.map((s) => {

@@ -63,7 +63,7 @@ const ShowMore = styled.button`
 export default function TopCollectibles() {
   return (
     <TopCollectiblesEl>
-      <Title>Top Collectibles</Title>
+      <Title>Projects </Title>
       <TopSection>
         <Sort>Sales Volume</Sort>
         <Date>Today</Date>

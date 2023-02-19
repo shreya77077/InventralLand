@@ -146,7 +146,7 @@ const Tag = styled.span`
 const AllTabs = [
   { Id: 1, Title: "Ownership", Content: <OwnershipItem /> },
   { Id: 2, Title: "History", Content: <Tab /> },
-  { Id: 3, Title: "Bids", Content: <Tab /> },
+  // { Id: 3, Title: "Bids", Content: <Tab /> },
   { Id: 4, Title: "Offers", Content: <Tab /> },
 ];
 
@@ -158,7 +158,7 @@ export default function Asset() {
         <LeftSection>
           <ImageEl>
             <Image
-              src="/images/nft/bking.png"
+              src="/images/nftimages/logo.jpeg"
               layout="responsive"
               width="1000px"
               height="1000px"
@@ -192,23 +192,22 @@ export default function Asset() {
           </TopBtns>
           <AuthorContainer>
             <AvatarEl>
-              <Image src="/images/avatar/newk3d.png" width="50" height="50" />
+              <Image src="/images/nftimages/spheronlogo.png" width="50" height="50" />
             </AvatarEl>
             <span>
-              <CreatorLabel>Creator</CreatorLabel>
-              <UsernameEl>newk3d</UsernameEl>
+              <CreatorLabel>Brand Asset</CreatorLabel>
+              <UsernameEl>logo</UsernameEl>
             </span>
           </AuthorContainer>
-          <EditionEl>371 Editions Minted</EditionEl>
+          <EditionEl></EditionEl>
           <span>
-            <Title>KING BITCOIN</Title>
-            <MarketPlace>Marketplace</MarketPlace>
+            <Title>Spheron Protocol</Title>
+            <MarketPlace></MarketPlace>
           </span>
-          <AcOfferLabel>Accepting Offers</AcOfferLabel>
+          <AcOfferLabel>Job openings available</AcOfferLabel>
           <Des>
-            King Bitcoin is the oldest and wisest of the cryptoskeletons. When
-            all hope is lost the others look to him for guidance into the lands
-            of unlimited profit.
+
+          Deploy, host, and store your app, dapp, or website using any front end or back end, built to run on any blockchain, to any DSN of your choice in seconds.
           </Des>
           <TagContainer>
             <Tag>Crypto</Tag>
@@ -217,7 +216,7 @@ export default function Asset() {
           <Tabs mt="1rem" data={AllTabs} />
         </RightSection>
       </SectionContainer>
-      <BidSticky />
+      {/* <BidSticky /> */}
     </AssetEl>
   );
 }

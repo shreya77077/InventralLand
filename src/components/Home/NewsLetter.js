@@ -69,12 +69,12 @@ const ChBox = styled.div`
 export default function NewsLetter() {
   return (
     <NewsLetterEl>
-      <Title>Never miss a drop</Title>
+      <Title>How does it works ?</Title>
       <Sub>Subscribe for the latest news, drops & collectibles</Sub>
-      <Input>
+     <Input>
         <input type="email" placeholder="Email" />
         <Btn>Subscribe</Btn>
-      </Input>
+      </Input> 
       <Text>
         After reading the <PL href="#">Privacy Notice</PL>, you may subscribe
         for our newsletter to get special offers and occasional surveys
@@ -82,7 +82,7 @@ export default function NewsLetter() {
         in the email.
       </Text>
       <ChBox>
-        <input type="checkbox" id="NewsSub" />
+        {/* <input type="checkbox" id="NewsSub" /> */}
         <label htmlFor="NewsSub">
           By entering my email and subscribing I confirm and agree to the above.
         </label>

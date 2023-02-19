@@ -112,15 +112,48 @@ const Badge = styled.span`
   }
 `;
 const Amount = styled.span``;
-
+let myArr = [
+  {
+   src: "/images/nftimages/sigmund-jzz_3jWMzHA-unsplash.jpg",
+   id: 1,
+   Name: "Sakshi.eth"
+  },
+  {
+   src: "/images/nftimages/nicolas-horn-MTZTGvDsHFY-unsplash.jpg",
+   id: 2,
+   Name: "0xNicolas"
+   
+  },
+  {
+   src: "/images/nftimages/leilani-angel-K84vnnzxmTQ-unsplash.jpg",
+   id: 3,
+   Name: "0xAryan"
+  },
+  {
+    src: "/images/nftimages/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+    id: 4,
+    Name: "Adyaasa.eth"
+   },
+   {
+    src: "/images/nftimages/aiony-haust-3TLl_97HNJo-unsplash.jpg",
+    id: 5,
+    Name: "Betsy.eth"
+   },
+   {
+    src: "/images/nftimages/julian-wan-WNoLnJo7tS8-unsplash.jpg",
+    id: 6,
+    Name: "Joseph.eth"
+   },
+  
+];
 export default function Carousel() {
   const ItemContainerRef = useRef(null);
   // b => beginning | m => middle | e => end
   const [ScrollInd, setScrollInd] = useState("b");
   return (
     <CarouselEl>
-      <Button>Best Selling</Button>
-      <Title>Top Creators</Title>
+      <Button>Buidlers</Button>
+      <Title>Top Curators</Title>
       <Controls>
         <CtrlBtn
           active={ScrollInd === "e" || ScrollInd === "m"}
@@ -155,29 +188,87 @@ export default function Carousel() {
           if (SL >= scrollWidth) setScrollInd("e");
         }}
       >
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => {
-          return (
-            <Link href="/profile" passHref key={i}>
-              <a>
-                <Item>
-                  <Avatar>
-                    <Image
-                      src="/images/avatar/ugonzo.jpg"
-                      height="120"
-                      width="120"
-                    />
-                  </Avatar>
-                  <Name>Ugonzo Art</Name>
-                  <BottomSection>
-                    <Badge number={i} />
-                    <Amount>$400,000</Amount>
-                  </BottomSection>
-                </Item>
-              </a>
-            </Link>
-          );
-        })}
-      </ItemContainer>
-    </CarouselEl>
-  );
-}
+
+{/* let myArr = [
+    {
+     Imagesrc: "./image/nftimages/human1.webp",
+     id: 1,
+    },
+    {
+     src: "./image/nftimages/human2.webp",
+     id: 2,
+    },
+    {
+     src: "/image/nftimages/human3.png",
+     id: 3,
+    },
+    
+]; */}
+
+
+{myArr.map((i) => {
+    return (
+        
+        <Link href="/profile" passHref key={i.id}>
+        <a>
+          <Item>
+            <Avatar>
+              <Image
+                src={i.src}
+                height="120"
+                width="120"
+                />
+            </Avatar>
+            <Name>
+            {i.Name}
+            </Name>
+            {/* <BottomSection>
+              <Badge number={i} />
+              <Amount>$400,000</Amount>
+            </BottomSection> */}
+          </Item>
+        </a>
+      </Link>
+    );
+  })}
+  </ItemContainer>
+      
+      </CarouselEl>
+      
+    );
+  }
+  
+  
+  
+//         {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => {
+//           return (
+            
+
+//             <Link href="/profile" passHref key={i}>
+//               <a>
+//                 <Item>
+//                   <Avatar>
+//                     <Image
+//                       src="/images/avatar/ugonzo.jpg"
+//                       height="120"
+//                       width="120"
+//                     />
+//                   </Avatar>
+//                   <Name>Ugonzo Art</Name>
+//                   <BottomSection>
+//                     <Badge number={i} />
+//                     <Amount>$400,000</Amount>
+//                   </BottomSection>
+//                 </Item>
+//               </a>
+//             </Link>
+//           );
+//         })}
+//       </ItemContainer>
+      
+//     </CarouselEl>
+    
+//   );
+// }
+
+
