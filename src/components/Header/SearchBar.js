@@ -45,7 +45,7 @@ export default function SearchBar() {
     <SearchBarEl>
       <SearchBarBg>
         <CgSearch />
-        <SearchInput placeholder="Search collectibles and collections" />
+        <SearchInput placeholder="Search Web3 Projects" />
       </SearchBarBg>
     </SearchBarEl>
   );

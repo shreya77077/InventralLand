@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ethers } from "ethers";
 import { FiMenu } from "react-icons/fi";
 import { CgSearch } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
@@ -88,9 +89,15 @@ const AuthItems = styled(NavItem)`
   }
 `;
 
-export default function Header({ mobileMenu }) {
-  const { MobileMenuIsOpen, setMobileMenuIsOpen } = mobileMenu;
-  const [SearchIsOpen, setSearchIsOpen] = useState(false);
+
+const Navigation = ({ account, setAccount, mobileMenu }) => {
+  const connectHandler = async () => {
+    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+    const account = ethers.utils.getAddress(accounts[0])
+    setAccount(account);
+  }
+
+  const { MobileMenuIsOpen, setMobileMenuIsOpen } = mobileMenu
 
   function toggleMenu() {
     setMobileMenuIsOpen(!MobileMenuIsOpen);
@@ -117,42 +124,27 @@ export default function Header({ mobileMenu }) {
       </MenuIcon>
       <Center>
         <Logo src="/images/cryptoLogo.png" />
-        <LogoText href="#">NFT</LogoText>
-        <SearchBar />
+        <LogoText href="#">InventralLand</LogoText>
         <Nav>
-          <ul>
-            <li>
-              <NavItem href="#">Marketplace</NavItem>
-            </li>
-            <li>
-              <NavItem href="#">Drops</NavItem>
-            </li>
-            <li>
-              <NavItem href="#">Brands</NavItem>
-            </li>
-            <li>
-              <Button>Connect Wallet</Button>
-            </li>
-          </ul>
+          {account ? (
+            <Button
+            >
+              {account.slice(0, 6) + '...' + account.slice(38, 42)}
+            </Button>
+          ) : (
+            <Button
+              onClick={connectHandler}
+            >
+              Connect Wallet
+            </Button>
+          )}
+          <Button><a href ="https://nft-minter-neon.vercel.app/">Create your buissness</a></Button>
         </Nav>
       </Center>
-      {SearchIsOpen ? (
-        <SearchBarMob
-          SearchIsOpen={SearchIsOpen}
-          setSearchIsOpen={setSearchIsOpen}
-        />
-      ) : (
-        ""
-      )}
-      <AuthItems href="#">Sign In</AuthItems>
-      <AuthItems href="#">Sign Up</AuthItems>
-      <SearchIcon>
-        <CgSearch
-          onClick={() => {
-            setSearchIsOpen(!SearchIsOpen);
-          }}
-        />
-      </SearchIcon>
-    </HeaderEl>
+    </HeaderEl>    
   );
 }
+
+export default Navigation
+
+

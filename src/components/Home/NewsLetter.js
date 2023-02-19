@@ -70,23 +70,21 @@ export default function NewsLetter() {
   return (
     <NewsLetterEl>
       <Title>How does it works ?</Title>
-      <Sub>Subscribe for the latest news, drops & collectibles</Sub>
-     <Input>
+      <Sub>Hop onto "Connect Business", connect your wallet. Enter your NFT name & descrption. In no time AI generated NFT, by Hugging Face API,is minted.</Sub>
+     {/* <Input>
         <input type="email" placeholder="Email" />
         <Btn>Subscribe</Btn>
-      </Input> 
-      <Text>
-        After reading the <PL href="#">Privacy Notice</PL>, you may subscribe
-        for our newsletter to get special offers and occasional surveys
-        delivered to your inbox. Unsubscribe at any time by clicking on the link
-        in the email.
-      </Text>
-      <ChBox>
-        {/* <input type="checkbox" id="NewsSub" /> */}
+      </Input>  */}
+      <Sub>
+        Showcase your projects to reach a wider community.<PL href="#"></PL>Grow your business and brand value,by targeting right audience with your brand assets. 
+       
+      </Sub>
+      {/* <ChBox>
+        <input type="checkbox" id="NewsSub" />
         <label htmlFor="NewsSub">
           By entering my email and subscribing I confirm and agree to the above.
         </label>
-      </ChBox>
+      </ChBox> */}
     </NewsLetterEl>
   );
 }
