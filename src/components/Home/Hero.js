@@ -135,7 +135,7 @@ const Items = [
     // Title: "UFC 271",
     // Author: "UFC",
 
-    ImageSrc: "/images/nftimages/wallpaper2.jpeg",
+    ImageSrc: "/images/chainlink_images/image7.webp",
   },
   {
     Id: 2,
@@ -144,7 +144,7 @@ const Items = [
     // Title: "Slide 2",
     // Author: "UFC",
 
-    ImageSrc: "/images/nftimages/wallpaper1.jpeg",
+    ImageSrc: "/images/chainlink_images/image4.jpeg",
   },
   {
     Id: 3,
@@ -153,7 +153,7 @@ const Items = [
     // Title: "Slide 3",
     // Author: "UFC",
 
-    ImageSrc: "/images/nftimages/wallpaper4.jpeg",
+    ImageSrc: "/images/chainlink_images/image3.avif",
   },
 ];
 
@@ -165,8 +165,8 @@ export default function Hero() {
   return (
     <HeroEl>
       <Title>
-        <Heading>Discover the best  web3 projects launch curated by the community buidlers</Heading>
-        <Sub>The one-and-only decentralized platform Web3 Project Founders can convert their brand-assets into NFTs by generating NFTs by the AI prompt,thus,enhancing the brand value in the ecosystem .</Sub>
+        <Heading>Seize the moment, seize the real estate market - our platform empowers you.</Heading>
+        <Sub>Step into a decentralized paradigm where all your real estate investment needs are met in one comprehensive platform, offering services for buying, selling, and renting properties as digital assets.Stay informed with up-to-the-minute knowledge of real-world & metaverse price scenarios, empowering you to make informed decisions.</Sub>
       </Title>
       <Slider>
         <InfoContainer>

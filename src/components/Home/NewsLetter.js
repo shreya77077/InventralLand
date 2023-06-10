@@ -69,14 +69,14 @@ const ChBox = styled.div`
 export default function NewsLetter() {
   return (
     <NewsLetterEl>
-      <Title>How does it works ?</Title>
-      <Sub>Hop onto "Connect Business", connect your wallet. Enter your NFT name & descrption. In no time AI generated NFT, by Hugging Face API,is minted.</Sub>
+      <Title>What we provide ?</Title>
+      <Sub>Whether you're an investor seeking opportunities or someone looking for a place to call home, our platform caters to your needs. You can securely hold, buy, sell, and rent digital asset properties with us. Each property or holding is minted as an NFT, ensuring authenticity and traceability. </Sub>
      {/* <Input>
         <input type="email" placeholder="Email" />
         <Btn>Subscribe</Btn>
       </Input>  */}
       <Sub>
-        Showcase your projects to reach a wider community.<PL href="#"></PL>Grow your business and brand value,by targeting right audience with your brand assets. 
+        We are working on to equip you with the most up-to-date property price trends, data feeds, and real-world insights. By connecting you with the current market scenario, we ensure that you receive what you truly deserve in your real estate endeavors.<PL href="#"></PL>
        
       </Sub>
       {/* <ChBox>

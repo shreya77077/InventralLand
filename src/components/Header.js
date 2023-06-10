@@ -124,7 +124,7 @@ const Navigation = ({ account, setAccount, mobileMenu }) => {
       </MenuIcon>
       <Center>
         <Logo src="/images/cryptoLogo.png" />
-        <LogoText href="#">InventralLand</LogoText>
+        <LogoText href="#">TrustWise Estates</LogoText>
         <Nav>
           {account ? (
             <Button
@@ -138,7 +138,7 @@ const Navigation = ({ account, setAccount, mobileMenu }) => {
               Connect Wallet
             </Button>
           )}
-          <Button><a href ="https://nft-minter-neon.vercel.app/">Create your buissness</a></Button>
+          <Button><a href ="http://localhost:3003/">Create your buissness</a></Button>
         </Nav>
       </Center>
     </HeaderEl>    

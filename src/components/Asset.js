@@ -158,7 +158,7 @@ export default function Asset() {
         <LeftSection>
           <ImageEl>
             <Image
-              src="/images/nftimages/logo.jpeg"
+              src="/images/chainlink_images/image9.jpeg"
               layout="responsive"
               width="1000px"
               height="1000px"
@@ -192,22 +192,22 @@ export default function Asset() {
           </TopBtns>
           <AuthorContainer>
             <AvatarEl>
-              <Image src="/images/nftimages/spheronlogo.png" width="50" height="50" />
+              <Image src="/images/chainlink_images/image9.jpeg" width="50" height="50" />
             </AvatarEl>
             <span>
-              <CreatorLabel>Brand Asset</CreatorLabel>
+              <CreatorLabel>Digital-Property Asset</CreatorLabel>
               <UsernameEl>logo</UsernameEl>
             </span>
           </AuthorContainer>
           <EditionEl></EditionEl>
           <span>
-            <Title>Spheron Protocol</Title>
+            <Title>Meta-Housing-Society</Title>
             <MarketPlace></MarketPlace>
           </span>
-          <AcOfferLabel>Job openings available</AcOfferLabel>
+          <AcOfferLabel></AcOfferLabel>
           <Des>
-
-          Deploy, host, and store your app, dapp, or website using any front end or back end, built to run on any blockchain, to any DSN of your choice in seconds.
+          Meta-Housing-Society by Golden Project Builders, New York City ,United States.
+          
           </Des>
           <TagContainer>
             <Tag>Crypto</Tag>

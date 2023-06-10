@@ -114,35 +114,35 @@ const Badge = styled.span`
 const Amount = styled.span``;
 let myArr = [
   {
-   src: "/images/nftimages/sigmund-jzz_3jWMzHA-unsplash.jpg",
+   src: "/images/service_image/service1.jpeg",
    id: 1,
-   Name: "Sakshi.eth"
+   Name: "Onchain/Offchain-payments"
   },
   {
-   src: "/images/nftimages/nicolas-horn-MTZTGvDsHFY-unsplash.jpg",
+   src: "/images/service_image/service6.jpeg",
    id: 2,
-   Name: "0xNicolas"
+   Name: "NFTs"
    
   },
   {
-   src: "/images/nftimages/leilani-angel-K84vnnzxmTQ-unsplash.jpg",
+   src: "/images/service_image/service3.jpeg",
    id: 3,
-   Name: "0xAryan"
+   Name: "Price-Trends by Price-Data Feeds"
   },
   {
-    src: "/images/nftimages/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+    src: "/images/service_image/service5.webp",
     id: 4,
-    Name: "Adyaasa.eth"
+    Name: "Transparency & Trust"
    },
    {
-    src: "/images/nftimages/aiony-haust-3TLl_97HNJo-unsplash.jpg",
+    src: "/images/service_image/service2.png",
     id: 5,
-    Name: "Betsy.eth"
+    Name: "Security by Hybrid Smart-contracts"
    },
    {
-    src: "/images/nftimages/julian-wan-WNoLnJo7tS8-unsplash.jpg",
+    src: "/images/service_image/service7.png",
     id: 6,
-    Name: "Joseph.eth"
+    Name: "Asset Management"
    },
   
 ];
@@ -152,8 +152,8 @@ export default function Carousel() {
   const [ScrollInd, setScrollInd] = useState("b");
   return (
     <CarouselEl>
-      <Button>Buidlers</Button>
-      <Title>Top Curators</Title>
+      <Button></Button>
+      <Title>Services</Title>
       <Controls>
         <CtrlBtn
           active={ScrollInd === "e" || ScrollInd === "m"}
