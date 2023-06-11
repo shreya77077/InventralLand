@@ -138,7 +138,7 @@ const Navigation = ({ account, setAccount, mobileMenu }) => {
               Connect Wallet
             </Button>
           )}
-          <Button><a href ="my-app-beta-hazel.vercel.app">Create your buissness</a></Button>
+          <Button><a href ="https://my-app-beta-hazel.vercel.app/">Create your buissness</a></Button>
         </Nav>
       </Center>
     </HeaderEl>    
