@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <HomeEl>
       <Head>
-        <title>InventralLand</title>
+        <title>TrustWise Estates</title>
         <meta
           name="description"
           content="Cleaned create-next-app including styled-components and configured theme"
