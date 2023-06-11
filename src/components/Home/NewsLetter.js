@@ -70,7 +70,7 @@ export default function NewsLetter() {
   return (
     <NewsLetterEl>
       <Title>What we provide ?</Title>
-      <Sub>Whether you're an investor seeking opportunities or someone looking for a place to call home, our platform caters to your needs. You can securely hold, buy, sell, and rent digital asset properties with us. Each property or holding is minted as an NFT, ensuring authenticity and traceability. </Sub>
+      <Sub>Whether you&apos;re an investor seeking opportunities or someone looking for a place to call home, our platform caters to your needs. You can securely hold, buy, sell, and rent digital asset properties with us. Each property or holding is minted as an NFT, ensuring authenticity and traceability. </Sub>
      {/* <Input>
         <input type="email" placeholder="Email" />
         <Btn>Subscribe</Btn>
